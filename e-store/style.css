@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+    margin-left: 100px;
+    line-height: 100px;
+}
+
+h1 {
+    margin-left: 120px;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 80%;
+}
+
+ul {
+    display: flex;
+    float: right;
+    line-height: 100px;
+    margin-right: -100px;
+
+}
+
+li {
+    padding-right: 15px;
+    font-weight: bold;
+
+}
+
+.active {
+    color: #CB6CE6;
+}
+a:hover{
+    color: #CB6CE6;
+    text-decoration: underline;
+    text-decoration-thickness:2px;
+    text-underline-offset: 10px;
+    text-decoration-color: white;
+}
+
+button {
+    border-radius: 30px;
+    background: linear-gradient(#f44de4, #43063f);
+    border: none;
+    padding: 13px 30px;
+    margin-left: 120px;
+    margin-top: 40px;
+    font-size: 16px;
+    width: 240px;
+}
+button:hover{
+    background: linear-gradient(rgb(183, 120, 183), rgb(160, 23, 160));
+}
+
+.image {
+    float: right;
+    margin-top: -400px;
+    margin-right: -150px;
+}
+.icon{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(172, 97, 172), purple);
+}
+.icon:hover{
+    background: linear-gradient(rgb(183, 120, 183), rgb(160, 23, 160));
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:1052px) {
+ 
+    .image {
+        float: none;
+        margin-top: 0px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    ul {
+        margin-right: -50px;
+    }
+
+    h1, button {
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    body {
+        height: 158vh;
+        width: 80%;
+    }
+
+    .container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+.logo{
+    visibility: hidden;
+}
+}
